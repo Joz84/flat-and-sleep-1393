@@ -1,0 +1,23 @@
+<div class="container">
+
+<h1 class="text-center my-5">Flats and Sleep</h1>
+
+<div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-md-4">
+
+        <div class="card my-3">
+          <img src="<%= flat['imageUrl'] %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= flat["name"] %></h5>
+            <p class="card-text"><%= flat["price"] %> <%= flat["priceCurrency"] %></p>
+            <%= link_to "En savoir plus", flat_path(flat["id"]), class: "btn btn-primary"  %>
+          </div>
+        </div>
+
+      </div>
+    <% end %>
+
+</div>
+
+</div>

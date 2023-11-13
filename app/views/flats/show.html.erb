@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-center my-5"><%= @flat["name"] %></h1>
+            <h2><i></i><%= @flat["price"] %> <%= @flat["priceCurrency"] %></i></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, esse perspiciatis. Id voluptatum accusantium earum optio, in eaque suscipit quas ullam nisi, iure eum adipisci nobis porro hic laboriosam ipsa?
+            Architecto ullam quae tempora repellendus velit sequi molestias? Amet, rerum esse. Tempora exercitationem, expedita quas, vel, et cum libero aut a eaque dolore incidunt ullam impedit maiores asperiores iste commodi.
+            Vitae recusandae tenetur dolore rerum consectetur. Voluptas doloribus incidunt nisi earum dolorem quasi veniam asperiores, molestiae eveniet? Maxime, nobis autem. Accusamus saepe ut consequatur neque, a voluptatem laboriosam asperiores tempore.</p>
+
+            <%= link_to "Retour", root_path, class: "btn btn-primary" %>
+        
+        </div>
+        <div class="col-md-6">
+            <img src="<%= @flat["imageUrl"] %>" class="w-100 my-5" alt="">
+        </div>
+    </div>
+
+
+</div>
